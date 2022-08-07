@@ -1,0 +1,461 @@
+/*--- @tomnjunior ---*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/*--- @tomnjunior NAVBAR ---*/
+
+.navBar {
+  position: fixed;
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  background-color: #0259E4;
+  padding: 30px;
+  font-family: "Poppins", sans-serif;
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+.navBar .menu li {
+  list-style: none;
+  display: inline-block;
+  color: #000;
+}
+.navBar .menu li a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+.navBar .menu li a:hover {
+  color: #000;
+}
+
+/*--- @tomnjunior HOME ---*/
+
+.home {
+  display: flex;
+  color: #000;
+  min-height: 500px;
+  font-family: "Poppins", sans-serif;
+}
+.home .maxWidth {
+  margin: auto 0 auto 40px;
+}
+.home .homeContent .text1 {
+  font-size: 27px;
+}
+.home .homeContent .text2 {
+  font-size: 75px;
+  font-weight: bold;
+  margin-left: -3px;
+}
+.home .homeContent a {
+  display: inline-block;
+  background: #0259E4;
+  color: #fff;
+  font-size: 20px;
+  padding: 8px 25px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid #0259E4;
+}
+.home .homeContent a:hover {
+  color: #0259E4;
+  background: none;
+}
+
+/*--- @tomnjunior SESSÕES ---*/
+
+section {
+  padding: 100px 50px;
+  height: 100vh;
+}
+section .title {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.about,
+.portfolio,
+.skills,
+.contact,
+footer {
+  font-family: "Poppins", sans-serif;
+}
+.about .aboutContent,
+.portfolio .portfolioContent,
+.skills .skillsContent,
+.contact .contactContent {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*--- @tomnjunior SOBRE*/
+
+.about .aboutContent .left {
+  width: 45%;
+}
+.about .aboutContent .right {
+  width: 55%;
+}
+.about .aboutContent .right .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.about .aboutContent .right .text span {
+  color: #0259E4;
+}
+.about .aboutContent .right p {
+  text-align: justify;
+}
+.about .aboutContent .right a {
+  display: inline-block;
+  background: #0259E4;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid #0259E4;
+  transition: all 0.3s ease;
+}
+.about .aboutContent .right a:hover {
+  color: #0259E4;
+  background: none;
+}
+.about .aboutContent .left img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/*--- @tomnjunior PORTFOLIO ---*/
+
+.portfolio {
+  color: #fff;
+}
+
+.portfolio .title {
+  color:#000;
+}
+
+.portfolio .portfolioContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.portfolio .portfolioContent .card img{
+  width: 100%;
+}
+
+.portfolio .portfolioContent .card {
+  width: calc(33% - 20px);
+  background: #0259E4;
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px 25px;
+  transition: all 0.3s ease;
+}
+
+.portfolio .portfolioContent .card .portfolioLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.portfolio .portfolioContent .card .portfolioLinks a {
+  color:#fff;
+}
+
+/*--- @tomnjunior FORMAÇÃO E SKILLS ---*/
+
+.skills .skillsContent .column {
+  width: calc(50% - 30px);
+}
+.skills .skillsContent .left .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.skills .skillsContent .left p {
+  text-align: justify;
+}
+.skills .skillsContent .left a {
+  display: inline-block;
+  background: #0259E4;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 16px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid #0259E4;
+  transition: all 0.3s ease;
+}
+.skills .skillsContent .left a:hover {
+  color: #0259E4;
+  background: none;
+}
+.skills .skillsContent .right .bars {
+  margin-bottom: 15px;
+}
+.skills .skillsContent .right .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.skills .skillsContent .right span {
+  font-weight: 500;
+  font-size: 18px;
+}
+.skills .skillsContent .right .line {
+  width: 100%;
+  height: 5px;
+  background: #ccc;
+  position: relative;
+}
+.skills .skillsContent .right .line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #0259E4;
+}
+.skills .skillsContent .right .html::before {
+  width: 99%;
+}
+.skills .skillsContent .right .css::before {
+  width: 99%;
+}
+.skills .skillsContent .right .js::before {
+  width: 80%;
+}
+.skills .skillsContent .right .react::before {
+  width: 70%;
+}
+.skills .skillsContent .right .ts::before {
+  width: 70%;
+}
+
+/*--- @tomnjunior  CONTATO ---*/
+.contact .contactContent {
+  align-items: flex-start;
+}
+
+.contact .contactContent .column {
+  width: calc(50% - 30px);
+}
+
+.text {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.row {
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+
+.infoTitle {
+  font-weight: 500;
+}
+.infoSubtitle {
+  color: #333;
+}
+.social {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.contact .right form .fields {
+  display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field {
+  width: 100%;
+  height: 45px;
+  margin-bottom: 15px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+}
+.contact .right form .name {
+  margin-right: 10px;
+}
+.contact .right form .email {
+  margin-left: 10px;
+}
+.contact .right form .textarea {
+  width: 100%;
+  height: 80px;
+}
+.contact .right form .textarea textarea {
+  padding-top: 10px;
+  resize: none;
+}
+.contact .right form .button {
+  width: 170px;
+  height: 47px;
+}
+.contact .right form .button button {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #0259E4;
+  background: #0259E4;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.contact .right form .button button:hover {
+  color: #0259E4;
+  background: none;
+}
+
+/*--- @tomnjunior RODAPÉ ---*/
+
+footer {
+  background: #111;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+/*--- @tomnjunior Responsividade ---*/
+@media (max-width: 1300px) {
+  .navBar .maxWidth {
+    margin-left: 0;
+  }
+}
+@media (max-width: 1104px) {
+  .about .aboutContent .left img {
+    width: 350px;
+    height: 350px;
+  }
+}
+@media (max-width: 991px) {
+  .navBar .maxWidth {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 947px) {
+  .maxWidth {
+    max-width: 800px;
+    padding: 0 50px;
+  }
+  .menuButton {
+    display: block;
+    z-index: 999;
+  }
+  .navBar .menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: -100%;
+    top: 0;
+    background: #111;
+    padding-top: 80px;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  .navBar .menu.active {
+    left: 0;
+  }
+  .navBar .menu li {
+    display: block;
+  }
+  .navBar .menu li a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+  }
+  .home .homeContent .text2 {
+    font-size: 70px;
+  }
+  .home .homeContent .text3 {
+    font-size: 35px;
+  }
+  .home .homeContent a {
+    font-size: 23px;
+    padding: 10px 30px;
+  }
+  .about .aboutContent .column {
+    width: 50%;
+  }
+  .about .aboutContent .left {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+  }
+  .about .aboutContent .right {
+    flex: 100%;
+  }
+  .portfolio .portfolioContent .card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+  .skills .skillsContent .column,
+  .contact .contactContent .column {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+  footer {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 690px) {
+  .home .homeContent .text2 {
+    font-size: 60px;
+  }
+  .home .homeContent .text3 {
+    font-size: 32px;
+  }
+  .home .homeContent a {
+    font-size: 20px;
+  }
+  .portfolio .portfolioContent .card {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .homeContent .text2 {
+    font-size: 50px;
+  }
+  .home .homeContent .text3 {
+    font-size: 27px;
+  }
+}
